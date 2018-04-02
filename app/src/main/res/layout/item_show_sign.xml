@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/item_part_touch"
+    android:padding="10dp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/iv_head_icon"
+        android:src="@drawable/image_error"/>
+
+    <LinearLayout
+        android:id="@+id/ll_base_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_head_icon"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="彭港归"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:id="@+id/tv_name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="02155039"
+            android:id="@+id/tv_stu_id"
+            android:textColor="#666"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/iv_to_right"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/to_right"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@id/iv_to_right"
+        android:layout_centerVertical="true"
+        android:id="@+id/ll_sign_info">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#e00"
+            android:gravity="right"
+            android:id="@+id/tv_issign"
+            android:text="已签到"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_sign_num"
+            android:text="10 经验值"
+            android:gravity="right"
+            android:textColor="#aa0"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</RelativeLayout>
